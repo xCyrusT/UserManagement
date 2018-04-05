@@ -1,10 +1,18 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
-    CommonModule
-  ],
-  declarations: []
+    CommonModule,
+    NgbModule.forRoot(),
+  ]
 })
-export class CoresModule { }
+export class CoresModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: CoresModule,
+      providers: []
+    };
+  }
+}
