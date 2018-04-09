@@ -11,8 +11,7 @@ import { CoresModule } from './cores/cores.module';
 import { AuthModule } from './auth/auth.module';
 import { RolesModule } from './roles/roles.module';
 import { UsersModule } from './users/users.module';
-import { LayoutsModule } from './shared/layouts/layouts.module';
-import { ComponentsModule } from './shared/components/components.module';
+import { AuthRoutingModule } from './auth/auth-routing.module';
 
 
 @NgModule({
@@ -22,14 +21,12 @@ import { ComponentsModule } from './shared/components/components.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     CoresModule.forRoot(),
-    AuthModule,
     UsersModule,
     RolesModule,
-    LayoutsModule,
-    ComponentsModule
+    AuthModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [
