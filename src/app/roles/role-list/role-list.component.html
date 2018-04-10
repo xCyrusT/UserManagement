@@ -1,3 +1,29 @@
-<p>
-  role-list works!
-</p>
+<div id="role-list">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Role name</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Admin</td>
+          <td>
+            <button class="btn btn-success" (click)="EditRole()">Edit</button>
+            <button class="btn btn-danger" (click)="DeleteRole()">Delete</button>
+          </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Mod</td>
+            <td>
+              <button class="btn btn-success" (click)="EditRole()">Edit</button>
+              <button class="btn btn-danger" (click)="DeleteRole()">Delete</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>

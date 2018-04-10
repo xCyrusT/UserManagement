@@ -1,3 +1,72 @@
-<p>
-  role-form works!
-</p>
+<app-layout>
+
+    <app-page-content>
+      <section header>
+      </section>
+      <section body>
+          <form class="form-horizontal" role="form" method="POST" action="#">
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                  <h2></h2>
+                  <hr>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="name">Role ID</label>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon" style="width: 2.6rem">
+                          <i class="fas fa-chess-king"></i>
+                      </div>
+                      <input type="text" name="roleID" class="form-control" id="roleID" placeholder="Role ID" required autofocus>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <!-- Put role id validation error messages here -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 field-label-responsive">
+                  <label for="password">Role name</label>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                      <div class="input-group-addon" style="width: 2.6rem">
+                          <i class="far fa-keyboard"></i>
+                      </div>
+                      <input type="text" name="roleName" class="form-control" id="roleName" placeholder="Role Name" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-control-feedback">
+                    <span class="text-danger align-middle">
+                      <i class="fa fa-close">
+                        <!-- Put role name validation error messages here -->
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-6">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="reset" class="btn btn-danger">Cancel</button>
+                </div>
+              </div>
+            </form>
+      </section>
+    </app-page-content>
+
+  </app-layout>

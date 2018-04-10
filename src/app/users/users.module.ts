@@ -13,7 +13,7 @@ import { ComponentsModule } from '../shared/components/components.module';
     CommonModule,
     UsersRoutingModule,
     LayoutsModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   declarations: [
     UserComponent,

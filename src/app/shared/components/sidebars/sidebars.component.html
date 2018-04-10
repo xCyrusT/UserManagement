@@ -1,3 +1,54 @@
-<p>
-  sidebars works!
-</p>
+<div id="app-sidebar">
+  <!--<ul class="list-group list-group-flush">
+    <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/user">User Management</a>
+    </li>
+    <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/role">Role Management</a>
+    </li>
+    <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/login">User Login</a>
+    </li>
+    <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/register">User Register</a>
+    </li>
+  </ul>-->
+
+  <div class="row">
+    <ul>
+      <li class="list-group">
+        <i class="far fa-user"> User</i>
+        <ul>
+          <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/user">User Management</a>
+          </li>
+          <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/user/create">Create User</a>
+          </li>
+        </ul>
+      </li>
+      <li class="list-group">
+          <i class="fab fa-keycdn"> Role</i>
+          <ul>
+            <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+              <a routerLink="/role">Role Management</a>
+            </li>
+            <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+              <a routerLink="/role/create">Create Role</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list-group">
+            <i class="far fa-sun"> Setting</i>
+            <ul>
+              <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="/login">Login</a>
+              </li>
+              <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="/register">Register</a>
+              </li>
+            </ul>
+          </li>
+    </ul>
+  </div>
+</div>
