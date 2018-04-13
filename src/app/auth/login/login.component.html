@@ -2,72 +2,48 @@
   <section header>
   </section>
   <section body>
+
     <div class="container">
-      <form class="form form-group" role="form" method="POST" action="#">
-        <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6 offset-3">
+
+          <form role="form" method="POST" action="#">
             <h2>Login</h2>
             <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 field-label-responsive">
-            <label for="name">Username</label>
-          </div>
-          <div class="col-md-6">
             <div class="form-group">
-              <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                <div class="input-group-addon" style="width: 2.6rem">
-                  <i class="fa fa-user"></i>
+              <div class="col-md-9">
+                <div class="input-group">
+                  <div class="input-group-addon" style="width: 2.6rem">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <input type="text" name="uName" class="form-control" id="uName" placeholder="Username" required autofocus>
                 </div>
-                <input type="text" name="uName" class="form-control" id="uName" placeholder="Username" required autofocus>
               </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-control-feedback">
-              <span class="text-danger align-middle">
-
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 field-label-responsive">
-            <label for="password">Password</label>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group has-danger">
-              <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                <div class="input-group-addon" style="width: 2.6rem">
-                  <i class="fa fa-key"></i>
+            <div class="form-group">
+              <div class="col-md-9">
+                <div class="input-group">
+                  <div class="input-group-addon" style="width: 2.6rem">
+                    <i class="fa fa-key"></i>
+                  </div>
+                  <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
                 </div>
-                <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
               </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-control-feedback">
-              <span class="text-danger align-middle">
-                <i class="fa fa-close">
-
-                </i>
-              </span>
+            <div class="form-group">
+              <div class="col-md-9 offset-3">
+                <button type="submit" class="btn btn-success">Login</button>
+                <button type="reset" class="btn btn-danger">Cancel</button>
+                <p class="message">Not registered?
+                  <a routerLink="/register">Create an account</a>
+                </p>
+              </div>
             </div>
-          </div>
+          </form>
+
         </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-6">
-            <button type="submit" class="btn btn-success">Login</button>
-            <button type="reset" class="btn btn-danger">Cancel</button>
-            <p class="message">Not registered?
-              <a routerLink="/register">Create an account</a>
-            </p>
-          </div>
-        </div>
-      </form>
+      </div>
     </div>
+
   </section>
 </app-page-content>

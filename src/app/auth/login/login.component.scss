@@ -1,13 +1,15 @@
+:host ::ng-deep page-container {
+  background-color: black!important;
+}
+
 form {
   border: 1px solid black;
   background-color: #fff;
 }
+h2 {
+  text-align: center;
+}
 div {
-  label {
-    font-size: 20px;
-    margin-top: 5px;
-    margin-left: 280px;
-  }
   input {
     margin-left: 100px;
   }
@@ -16,9 +18,9 @@ div {
     margin-left: 120px;
   }
   button {
-    margin-left: 47px;
+    margin-left: 35px;
   }
   p {
-    margin-left: 36px;
+    margin-left: 20px;
   }
 }

@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-//@import '../variables';
-//@import '../mixins-css3';
-//@import '../reset';
+@import '../theme.scss';
+@import '../variables';
+@import '../mixins-css3';
+@import '../reset';
+
 // Code here
 body {
   padding-top: 70px;
@@ -65,14 +67,12 @@ body {
   .page-body {
     padding: 15px 0;
     div{
-      // label {
-      //   margin-top: 13px;
-      //   margin-left: 100px;
-      // }
-      // i {
-      //   margin-top: 13px;
-      //   margin-left: 15px;
-      // }
+      //label {
+        //margin-top: 13px;
+        //margin-left: 100px;
+      //}
+      //i {
+        //margin-top: 13px;
     }
   }
 }
