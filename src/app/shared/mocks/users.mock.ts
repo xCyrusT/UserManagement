@@ -1,6 +1,6 @@
 import { UsersModel } from './../models/users.model';
 
-const UsersMock: UsersModel[] = [
+export const UsersMock: UsersModel[] = [
   { id: 1, username: 'user01', password: '123456'},
   { id: 2, username: 'user02', password: '123456'},
   { id: 3, username: 'user03', password: '123456'},

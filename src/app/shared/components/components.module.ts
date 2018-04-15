@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HeadersComponent } from './headers/headers.component';
 import { SidebarsComponent } from './sidebars/sidebars.component';
 import { PageContentComponent } from './page-content/page-content.component';
+import { FbInputComponent } from './fb-input/fb-input.component';
 
 const COMPONENTS = [
   HeadersComponent,
@@ -16,7 +17,7 @@ const COMPONENTS = [
     CommonModule,
     RouterModule
   ],
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, FbInputComponent],
   exports: [...COMPONENTS]
 })
 export class ComponentsModule { }

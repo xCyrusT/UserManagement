@@ -5,41 +5,46 @@
 
     <div class="container">
       <div class="row">
+
         <div class="col-md-6 offset-3">
 
-          <form role="form" method="POST" action="#">
-            <h2>Login</h2>
-            <hr>
-            <div class="form-group">
-              <div class="col-md-9">
-                <div class="input-group">
-                  <div class="input-group-addon" style="width: 2.6rem">
-                    <i class="fa fa-user"></i>
+          <div class="form-login">
+            <h1>Login</h1>
+            <form [formGroup]="loginForm" (ngSubmit)="formOnSubmit($event, loginForm.value)">
+
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-username">
+                      <i class="fa fa-user"></i>
+                    </span>
                   </div>
-                  <input type="text" name="uName" class="form-control" id="uName" placeholder="Username" required autofocus>
+                  <input type="text" [formControl]="username" class="form-control" id="username" placeholder="User Name" aria-describedby="addon-username">
+                  <div class="invalid-feedback">
+                    <span *ngIf="sumitted && username.hasError('required')">The username is required</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-9">
-                <div class="input-group">
-                  <div class="input-group-addon" style="width: 2.6rem">
-                    <i class="fa fa-key"></i>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-password">
+                      <i class="fa fa-key"></i>
+                    </span>
                   </div>
-                  <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                  <input type="password" [formControl]="password" class="form-control" id="password" placeholder="password" aria-describedby="addon-password">
+                  <div class="invalid-feedback">
+                    <span *ngIf="sumitted && password.hasError('required')">The password is required</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-9 offset-3">
-                <button type="submit" class="btn btn-success">Login</button>
-                <button type="reset" class="btn btn-danger">Cancel</button>
-                <p class="message">Not registered?
-                  <a routerLink="/register">Create an account</a>
-                </p>
+              <div class="form-group">
+                <button class="btn btn-primary" type="submit">
+                  <i class="fa fa-sign-in-alt"></i>&nbsp;Login
+                </button>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
 
         </div>
       </div>
